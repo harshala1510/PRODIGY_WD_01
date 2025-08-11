@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshala Patil | Landing Page</title>
+  <style>
+    /* Reset & base styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 100px 20px;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #home h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    #home p {
+      font-size: 1.3rem;
+      max-width: 600px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #fff;
+      color: #4e54c8;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+      transform: scale(1.05);
+    }
+
+    #about {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #f5f5f5;
+    }
+
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+      }
+      #home h2 {
+        font-size: 2.2rem;
+      }
+      #about p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Harshala Patil</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to My Webspace</h2>
+    <p>Crafting meaningful digital experiences with code, creativity, and passion.</p>
+    <a href="#about"><button class="btn">Get Started</button></a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hey! I’m Harshala Patil, an IT engineering student with a creative spark and a passion for building things that matter. 
+      I enjoy turning ideas into interactive websites using HTML, CSS, and JavaScript.
+      I love designing with purpose, learning new skills, and creating digital experiences that feel both smart and human. 💡💻
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Harshala Patil | Built with 💙 HTML, CSS, and JavaScript
+  </footer>
+
+</body>
+</html>
