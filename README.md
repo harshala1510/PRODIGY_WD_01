@@ -20,8 +20,3 @@ This page serves as my personal webspace to showcase my introduction, skills, an
 
 ---
 
-## 🚀 Getting Started
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-username/landing-page.git
