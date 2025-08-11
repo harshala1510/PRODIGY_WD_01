@@ -17,6 +17,7 @@ This page serves as my personal webspace to showcase my introduction, skills, an
 ## 🛠 Tech Stack
 - **HTML5**
 - **CSS3**
+-  **Javascript**
 
 ---
 
