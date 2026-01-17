@@ -1,170 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Harshala Patil | Landing Page</title>
-  <style>
-    /* Reset & base styling */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #4e54c8, #8f94fb);
-      color: #fff;
-    }
-
-    header {
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 20px;
-      text-align: center;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    }
-
-    header h1 {
-      font-size: 2rem;
-      color: #fff;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 100px 20px;
-      text-align: center;
-      min-height: 100vh;
-    }
-
-    #home {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #home h2 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-    #home p {
-      font-size: 1.3rem;
-      max-width: 600px;
-    }
-
-    .btn {
-      margin-top: 30px;
-      padding: 12px 25px;
-      background-color: #fff;
-      color: #4e54c8;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #ddd;
-      transform: scale(1.05);
-    }
-
-    #about {
-      background-color: rgba(255, 255, 255, 0.1);
-      color: #f5f5f5;
-    }
-
-    #about h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    #about p {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1.2rem;
-      line-height: 1.8;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      background-color: rgba(0, 0, 0, 0.2);
-      text-align: center;
-      padding: 20px;
-      color: #ccc;
-      font-size: 0.9rem;
-    }
-
-    /* Responsive */
-    @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      nav a {
-        margin: 0 8px;
-        font-size: 0.9rem;
-      }
-      #home h2 {
-        font-size: 2.2rem;
-      }
-      #about p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFlow - Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="mobile-container">
+        <nav>
+            <div class="logo">UniFlow</div>
+            <div class="nav-links">
+                <span onclick="showPage('dashboard')" id="nav-dashboard" class="active">Dashboard</span>
+                <span onclick="showPage('tasks')" id="nav-tasks">Tasks</span>
+                <span onclick="showPage('events')" id="nav-events">Events</span>
+            </div>
+        </nav>
 
-  <header>
-    <h1>Harshala Patil</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-    </nav>
-  </header>
+        <section id="dashboard" class="page active">
+            <header>
+                <h1>Welcome Back, Engineer 👨‍💻</h1>
+                <p class="quote">"Small progress every day leads to big results."</p>
+            </header>
 
-  <section id="home">
-    <h2>Welcome to My Webspace</h2>
-    <p>Crafting meaningful digital experiences with code, creativity, and passion.</p>
-    <a href="#about"><button class="btn">Get Started</button></a>
-  </section>
+            <div class="stat-grid">
+                <div class="stat-card blue">
+                    <span class="label">Academic Tasks</span>
+                    <span class="value">5 Pending</span>
+                </div>
+                <div class="stat-card gray">
+                    <span class="label">Workload</span>
+                    <span class="value">Medium</span>
+                </div>
+                <div class="stat-card orange">
+                    <span class="label">Campus Events</span>
+                    <span class="value">3 Upcoming</span>
+                </div>
+            </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hey! I’m Harshala Patil, an IT engineering student with a creative spark and a passion for building things that matter. 
-      I enjoy turning ideas into interactive websites using HTML, CSS, and JavaScript.
-      I love designing with purpose, learning new skills, and creating digital experiences that feel both smart and human. 💡💻
-    </p>
-  </section>
+            <div class="focus-box">
+                <h3>Focus Today</h3>
+                <ul>
+                    <li><span class="check">✔</span> Revise DBMS normalization</li>
+                    <li><span class="check">✔</span> Complete OS lab record</li>
+                    <li><span class="check">☐</span> Register for AI Workshop</li>
+                </ul>
+            </div>
 
-  <footer>
-    © 2025 Harshala Patil | Built with 💙 HTML, CSS, and JavaScript
-  </footer>
+            <div class="productivity-card">
+                <div class="prod-text">
+                    <h4>Productivity Score</h4>
+                    <p>Based on tasks & deadlines</p>
+                </div>
+                <div class="circular-progress">
+                    <span class="score">78%</span>
+                </div>
+            </div>
+        </section>
 
+        <section id="tasks" class="page">
+            <h2 class="page-title">My Tasks</h2>
+            <div class="task-list">
+                <div class="task-item orange">
+                    <div>
+                        <h4>DBMS Assignment</h4>
+                        <p>Due: 20 Feb</p>
+                    </div>
+                    <button class="btn-done">Done</button>
+                </div>
+                <div class="task-item red">
+                    <div>
+                        <h4>OS Lab Record</h4>
+                        <p>Due: 18 Feb</p>
+                    </div>
+                    <button class="btn-done">Done</button>
+                </div>
+                <div class="task-item green">
+                    <div>
+                        <h4>Mini Project Proposal</h4>
+                        <p>Due: 25 Feb</p>
+                    </div>
+                    <button class="btn-done">Done</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="page">
+            <h2 class="page-title">Campus Events</h2>
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=500" alt="AI">
+                <div class="event-info">
+                    <h3>AI Workshop</h3>
+                    <p>20 Jan 2026 | AI Club</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=500" alt="Fest">
+                <div class="event-info">
+                    <h3 style="color: #ff9f43;">Cultural Fest</h3>
+                    <p>25 Jan 2026 | Cultural Club</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
